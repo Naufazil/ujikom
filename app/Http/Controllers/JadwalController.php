@@ -21,7 +21,7 @@ class JadwalController extends Controller
                 $q->where('nama_eskul', 'like', '%' . $request->search . '%');
             });
         }
-
+//
         $jadwal = Jadwal::all();
         $jadwal = $query->get();
 
